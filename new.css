@@ -79,16 +79,43 @@ small{
     justify-content: space-evenly;
 }
 @media (max-width: 768px) {
+    h1 {
+        font-size: clamp(2rem, 4vw + 1rem, 3rem); /* Adjusts between 2rem and 3rem */
+    }
+    
+    h2 {
+        font-size: clamp(1.75rem, 3.5vw + 1rem, 2.5rem); /* Adjusts between 1.75rem and 2.5rem */
+    }
+    
+    h3 {
+        font-size: clamp(1.5rem, 3vw + 0.75rem, 2rem); /* Adjusts between 1.5rem and 2rem */
+    }
+    
+    h4 {
+        font-size: clamp(1.25rem, 2.5vw + 0.5rem, 1.75rem); /* Adjusts between 1.25rem and 1.75rem */
+    }
+    
+    h5 {
+        font-size: clamp(1rem, 2vw + 0.25rem, 1.5rem); /* Adjusts between 1rem and 1.5rem */
+    }
+    
+    h6 {
+        font-size: clamp(0.875rem, 1.5vw + 0.125rem, 1.25rem); /* Adjusts between 0.875rem and 1.25rem */
+    }
+    p {
+        font-size: clamp(1rem, 2vw + 0.5rem, 1.5rem); /* Adjusts between 1rem and 1.5rem */
+    }
+        
     body{
         font-size: 14px ;
     }
      .container1 {
-         margin:auto;
-        flex-direction:row;
-        justify-content: none;
+        margin:auto;
+        flex-direction:column-reverse;
+       
      }
      .container .title{
-         width:90%;
+         width:100%;
      }
     
     .name {
@@ -97,30 +124,20 @@ small{
         width:100%;
     }
    .me{
-       display:none;
+
+      
    }
+
+   
+   
+   
+
 .topic h1{
-    padding:none;   
+    padding:none;  
+    width:100%; 
 }
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* till here media query */
 .container1 .title{
@@ -200,7 +217,6 @@ li img{
     background-color:#111115;
     color: #fff;
     width:100%;
-    height: 900px;
     display:flex;
     padding:135px 135px 50px 135px;
     column-gap: 70px;
@@ -238,38 +254,7 @@ li img{
 .listi li h6 span{
     margin:20px;
 }
- /* marquee */
- 
- .marquee {
-    background-color: black;
-    overflow: hidden;
-    white-space: nowrap;
-    box-sizing: border-box;
-    width: 100%;
-    padding: 10px 0;
-}
-
-.marquee p {
-    display: inline-block;
-    padding-left: 100%;
-    animation: marquee 15s linear infinite;
-    font-size: 24px;
-    font-family: Arial, sans-serif;
-    color: white;
-}
-
-.marquee img { vertical-align: middle;
-    height: 40px; /* Adjust the height of the logos as needed */
-    margin-right: 10px;
-}
-
-@keyframes marquee {
-    0% { transform: translateX(100%); }
-    100% { transform: translateX(-100%); }
-}
-
  /* css for section4  */
-
 .section4{
     display:block;
     background-color:#EDEEF1;
@@ -295,6 +280,33 @@ li img{
         height:auto;
         display:block;
     }
+}
+.logo-invert {
+    filter: invert(1);
+}
+
+.logo-container {
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+}
+
+.box1 {
+    background-color: #111115;
+    height:250px;
+  
+}
+.box1 p{
+    text-align:center;
+    padding:60px 60px ;
+    margin: auto;
+    color: rgb(147, 137, 137);
+}
+.box1 img{
+    filter: invert(1);
+    height:120px;
+    width:120px;
+
 }
 .section4 .whole ul li{
     /* height:400px;  */
