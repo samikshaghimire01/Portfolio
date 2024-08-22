@@ -10,7 +10,7 @@
     font-weight: 400;
   }
 body {
-   
+   font-size: 20px;
   font-weight: 400;
   font-family:  "Montserrat", sans-serif;
   line-height: 1.6;
@@ -78,69 +78,8 @@ small{
     margin: 110px 30px 70px 30px;
     justify-content: space-evenly;
 }
-@media (max-width: 768px) {
-    h1 {
-        font-size: clamp(2rem, 4vw + 1rem, 3rem); /* Adjusts between 2rem and 3rem */
-    }
-    
-    h2 {
-        font-size: clamp(1.75rem, 3.5vw + 1rem, 2.5rem); /* Adjusts between 1.75rem and 2.5rem */
-    }
-    
-    h3 {
-        font-size: clamp(1.5rem, 3vw + 0.75rem, 2rem); /* Adjusts between 1.5rem and 2rem */
-    }
-    
-    h4 {
-        font-size: clamp(1.25rem, 2.5vw + 0.5rem, 1.75rem); /* Adjusts between 1.25rem and 1.75rem */
-    }
-    
-    h5 {
-        font-size: clamp(1rem, 2vw + 0.25rem, 1.5rem); /* Adjusts between 1rem and 1.5rem */
-    }
-    
-    h6 {
-        font-size: clamp(0.875rem, 1.5vw + 0.125rem, 1.25rem); /* Adjusts between 0.875rem and 1.25rem */
-    }
-    p {
-        font-size: clamp(1rem, 2vw + 0.5rem, 1.5rem); /* Adjusts between 1rem and 1.5rem */
-    }
-        
-    body{
-        font-size: 14px ;
-    }
-     .container1 {
-        margin:auto;
-        flex-direction:column-reverse;
-       
-     }
-     .container .title{
-         width:100%;
-     }
-    
-    .name {
-        margin:auto;
-        padding:20px 20px 20px 20px;
-        width:100%;
-    }
-   .me{
-
-      
-   }
-
-   
-   
-   
-
-.topic h1{
-    padding:none;  
-    width:100%; 
-}
-
-}
-
-/* till here media query */
 .container1 .title{
+    max-width: 100%;
     width: 55%;
     margin:0 0 60px 0;
 }
@@ -152,43 +91,52 @@ small{
     height: 260px;
     border-radius: 50%;
     border: none;  
+    display:block;
+    max-width: 100%;
 }
 
  /* css for section2 */
+
 .section2{
-height: 100%;
-background-color: #EDEEF1;
-color: #1C1C21;
+    padding:100px 0 45px 0;
+    background-color: #EDEEF1;
+    color: #1C1C21;
+}
+.wrapper{
+    width:90%;
+    margin: 0 auto;
+}
+.pic{
+    padding:0 80px;
 }
 .pic h2{
-    padding: 95px 0 0 180px;
+    margin-bottom: 75px;
 }
+
  .quotes li{
     background-color:var(--background-color) ;
     color: var(--color);
     border-radius: 16px;
     margin-bottom: 80px;
+    height: 540px;
    
 }
 
-  .quotes ul{
-    display: block;
-    flex-wrap: wrap;
-    list-style-type: none;
-}
+ .quotes ul{
+    width: 100%;
+    width:46%;
+ }
 .quotes {
     
-    margin: 80px 100px 0 100px;
+    /* margin: 80px 100px 0 100px; */
     display: flex;
     height: auto;
 }
-.side1,.side2{
+.side1{
+    margin:0 8% 0 0;
+    
 
-    width:40%;
-     margin: auto; 
-     margin-top:0px;
 }
- 
 li img{
     object-fit: cover;
     width:100%;
@@ -196,7 +144,7 @@ li img{
     border-radius: 16px 16px 0 0;   
  }
  li .experiencedetails{
-   height:175px;
+   height:auto;
    color: rgb(28, 28, 33);
    font-size:18px;
  }
@@ -207,10 +155,10 @@ li img{
      font-weight: 600;
     
  }
- .li_1{
+ /* .li_1{
      display:block;
      margin-left: 70px;   
- }
+ } */
  
  /* css for section3 */
 .section3 .con{
@@ -260,7 +208,6 @@ li img{
     background-color:#EDEEF1;
 }
  .testimonials h2{
-
     padding: 80px 0 0 145px;
 } 
 
@@ -275,39 +222,24 @@ li img{
     display: block;
     width: 40%;
 }
-@media(max-width:1000px){
-    .section4 .whole{
-        height:auto;
-        display:block;
-    }
-}
 .logo-invert {
     filter: invert(1);
 }
-
-.logo-container {
-    background-color: black;
-    padding: 20px;
-    text-align: center;
-}
-
-.box1 {
-    background-color: #111115;
-    height:250px;
-  
-}
-.box1 p{
-    text-align:center;
-    padding:60px 60px ;
-    margin: auto;
-    color: rgb(147, 137, 137);
+.box1{
+padding: 50px;
+background-color: #111115;
+display: flex;
+justify-content: center;
+gap:30px;
+flex-wrap:wrap;
+align-items:center;
 }
 .box1 img{
     filter: invert(1);
     height:120px;
     width:120px;
-
 }
+
 .section4 .whole ul li{
     /* height:400px;  */
     display: flex;
@@ -415,4 +347,44 @@ blockquote p{
 .section5 li a{
     color:#fff;
     text-decoration: none;
+}
+@media (max-width: 768px) {
+    body{
+        font-size: 14px ;
+    }
+     .container1 {
+        margin:auto;
+        flex-direction:column-reverse;
+        align-items: center;
+        align-content: none;
+       
+     }
+     .me {
+         margin-bottom:20px;
+     }
+    .name {
+        text-align:center;
+        margin:auto;
+        padding:20px 55px 20px 20px;
+        width:100%;
+    }
+    .topic h1{
+    padding:none;  
+    width:100%; 
+}
+    .pic h2{
+    padding:none;
+}
+
+.box1{
+    padding:10px;
+    gap:20px;
+
+}
+   .box1 img{
+       height:50px;
+       width: 50px;
+   }
+
+
 }
