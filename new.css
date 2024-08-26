@@ -70,8 +70,11 @@ small{
     /*Css of own  */
 
 .name{
-    margin-left: 150px;
-    margin-top:70px;  
+   
+    margin:70px 50px 0 150px ; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
 }
 .container1{
     display:flex;
@@ -118,12 +121,11 @@ small{
     color: var(--color);
     border-radius: 16px;
     margin-bottom: 80px;
-    height: 540px;
-   
+    /* height: 540px;
+    */
 }
 
  .quotes ul{
-    width: 100%;
     width:46%;
  }
 .quotes {
@@ -136,6 +138,10 @@ small{
     margin:0 8% 0 0;
     
 
+}
+
+#sideli{
+    margin:130px 0 80px 0;
 }
 li img{
     object-fit: cover;
@@ -155,22 +161,24 @@ li img{
      font-weight: 600;
     
  }
- /* .li_1{
-     display:block;
-     margin-left: 70px;   
- } */
+ 
  
  /* css for section3 */
-.section3 .con{
+ .section3{
     background-color:#111115;
     color: #fff;
+ }
+.section3 .con{
+
     width:100%;
     display:flex;
-    padding:135px 135px 50px 135px;
+    /* flex-wrap: wrap; */
+    padding:135px 135px 85px 135px;
     column-gap: 70px;
 }
 .list {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     width:75%;
     column-gap:100px;
@@ -179,20 +187,18 @@ li img{
 .expertise{
     width:25%;
     text-align:end;
-  
-
 }
 .listi{
     display:block;
 }
 .listi li{
-    font-size: 20px;
-    width:330px;
+    /* font-size: 20px; */
+    /* width:330px; */
     display:flex;
     flex-wrap:wrap;
     padding:50px;
     padding-left:0px;
-    border-top:0.6px solid white;
+    border-top:0.2px solid white;
    
 }
 .listi li h6{
@@ -284,7 +290,7 @@ blockquote p{
     flex-wrap: wrap;
     justify-content: center;
     display: flex; 
-    margin: 0 4rem;
+    /* margin: 0 4rem; */
     padding: 0 20px;
   }
   
@@ -348,10 +354,16 @@ blockquote p{
     color:#fff;
     text-decoration: none;
 }
+/* Media */
 @media (max-width: 768px) {
-    body{
-        font-size: 14px ;
+*{
+        font-size: 12px ;
     }
+    p{
+    	font-size: 14px;
+        font-weight: 400;
+        color: #1C1C21;
+    } 
      .container1 {
         margin:auto;
         flex-direction:column-reverse;
@@ -359,7 +371,12 @@ blockquote p{
         align-content: none;
        
      }
+     .container1 .title{
+      width:80%;
+      
+     }
      .me {
+         margin-right: 7px;
          margin-bottom:20px;
      }
     .name {
@@ -372,10 +389,52 @@ blockquote p{
     padding:none;  
     width:100%; 
 }
-    .pic h2{
-    padding:none;
+.section2{
+    padding: 50px 0 20px 0;
 }
 
+#sideli{
+    margin:0 0 40px 0;
+}
+.pic{
+    padding:0px;   
+}
+ .pic h2{
+
+    margin-bottom: 45px; 
+ }
+.quotes{
+    flex-direction: column;
+}
+.quotes ul{
+    width:100%;
+}
+.quotes li{
+    
+    margin-bottom: 40px;
+}
+li img{
+    height: 250px;
+}
+
+.section3{
+    padding: 50px 0 20px 0;
+}
+.section3 .con{
+    flex-direction: column;
+    padding:25px;
+    /* margin:20px;*/
+}
+.list{
+    flex-direction: column;
+    width:100%;
+}
+.listi li{
+    padding: 30px 30px 30px 0;
+}
+.listi li h6 {
+    font-size:18px;
+}
 .box1{
     padding:10px;
     gap:20px;
@@ -386,5 +445,51 @@ blockquote p{
        width: 50px;
    }
 
+#success-stories{
+    padding: 30px 0 0 0;
 
+}
+#success-stories .container {
+    gap:40px;
+    padding: 20px;
+     margin: 0px;
+      }
+  #success-stories h2 {
+    padding:20px;
+   
+  }
+  .section4 .whole{
+      flex-direction: column;
+      margin: 20px 20px 0 20px;
+  }
+  .section4 .whole ul{
+     width: 100%;
+}
+.section4 .whole ul li{
+    padding:30px;
+    margin-bottom: 60px;
+}
+
+.card::after {
+    content: '';
+    position: absolute;
+    bottom: -34px;
+    left: 32%;
+    transform: translateX(-100%);
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 55px 50px 0 50px;
+    border-color: white transparent transparent transparent; 
+    
+}  
+blockquote p{
+    font-size:14px !important;
+}
+.testimonials h2{
+    padding: 55px 0 15px 20px;
+} 
+.info p{
+    display: none;
+} 
 }

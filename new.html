@@ -1,16 +1,18 @@
- <!DOCTYPE html>
+
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
+<!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
 <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet">
       <link rel="stylesheet" href="new.css">
 </head>
@@ -18,6 +20,18 @@
   <section class= "section1">
       <div class="name">
         <h5>Samiksha Ghimire</h5>
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+           Menu
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Experience</a></li>
+            <li><a class="dropdown-item" href="#">Expertise</a></li>
+            <li><a class="dropdown-item" href="#">Success-stories</a></li>
+            <li><a class="dropdown-item" href="#">Testimonials</a></li>
+            <li><a class="dropdown-item" href="#">Connect</a></li>
+          </ul>
+        </div>
       </div>
 
       <div class="container1">
@@ -51,7 +65,7 @@
                   <img src="1.jpg" alt="quote" />
                   <div class="experiencedetails p-4">
                     <h6>The Joy of Creation</h6>
-                    <p>
+                    <p >
                       "There’s nothing like seeing first webpage come to life."
                       Starting with HTML and CSS, i have experience the thrill of
                       turning plain text into something magic. 
@@ -62,7 +76,7 @@
                   <img src="3.jpg" alt="quote" />
                   <div class="experiencedetails p-4">
                     <h6>The “Why Isn’t This Working?” Moments</h6>
-                    <p>
+                    <p style=" margin:0;">
                       "Debugging is like being a detective in your own code".
                       These challenges teach you patience and problem-solving, crucial skills in web development.
                     </p>
@@ -73,7 +87,7 @@
                   <img src="5.jpg" alt="quote" />
                   <div class="experiencedetails p-4">
                     <h6>The Excitement of Continuous Learning</h6>
-                    <p>
+                    <p style=" margin:0;">
                       "In web development, the learning never stops." The
                       ever-evolving nature of the field keeps you engaged, ensuring
                       there’s always something new to discover.
@@ -83,11 +97,11 @@
           </ul>
           
           <ul class="side2">
-              <li  style= "margin:130px 0 80px 0 ;">
+              <li  id="sideli">
                   <img src="2.png" alt="quote" />
                   <div class="experiencedetails p-4">
                     <h6>The First Taste of Interactivity</h6>
-                    <p>
+                    <p style=" margin:0;">
                       "As you dive into JavaScript, "the web suddenly becomes dynamic."
                       Adding interactivity transforms your pages, making them respond
                       to user actions.
@@ -99,7 +113,7 @@
                   <img src="4.jpg" alt="quote" />
                   <div class="experiencedetails  p-4">
                     <h6>Completing Your First Project</h6>
-                    <p>
+                    <p style=" margin:0;">
                       "It’s not just a website; it’s proof you can bring ideas to
                       life." That feeling of accomplishment when everything comes
                       together is unforgettable.
@@ -110,7 +124,7 @@
                 <img src="6.jpg" alt="quote" />
                   <div class="experiencedetails p-4">
                     <h6>From Bugs to Brilliance</h6>
-                    <p>
+                    <p style=" margin:0;">
                       "Started with bugs and fumbles, but each one became a milestone of growth. 
                       Now, I’m confident and ready for whatever tech throws my way!"
                     </p>
@@ -125,7 +139,7 @@
   <section class="section3">
     <div class="con">
         <div class="expertise">
-          <h2>Expertise</h2>
+          <h2 style="margin: 0 0 36px;">Expertise</h2>
         </div>
     <ul class="list">
         <li>
@@ -334,6 +348,7 @@
       </ul>
     </div>
   </section>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html> 
 
