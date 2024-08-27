@@ -70,11 +70,36 @@ small{
     /*Css of own  */
 
 .name{
-   
     margin:70px 50px 0 150px ; 
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between; 
+}
+.Menu{
+    z-index:5;
+    position: fixed;
+    right: 50px;
+    border-radius: 10%;
+    background-color: white;
+    padding: 10px;
+    border:none;
+}
+.drops{
+    min-width: 50px !important;
+    width: 140px;
+    min-height:100vh ;
+    background-color: transparent;
+}
+.dropdown-item{
+    transform: rotate(90deg);
+    font-weight: 500;
+    color: #dc3630;
+    font-size:16px;
+    padding:5px;
+}
+.dropdown-item:hover{
+    color:#313040;
+    background-color: #c3bfba;
 }
 .container1{
     display:flex;
@@ -208,6 +233,7 @@ li img{
 .listi li h6 span{
     margin:20px;
 }
+
  /* css for section4  */
 .section4{
     display:block;
@@ -228,9 +254,7 @@ li img{
     display: block;
     width: 40%;
 }
-.logo-invert {
-    filter: invert(1);
-}
+
 .box1{
 padding: 50px;
 background-color: #111115;
@@ -241,7 +265,7 @@ flex-wrap:wrap;
 align-items:center;
 }
 .box1 img{
-    filter: invert(1);
+    filter: grayscale(4);
     height:120px;
     width:120px;
 }
@@ -306,13 +330,7 @@ blockquote p{
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   }
-  @media(max-width:1000px){
-      .success-story{
-          width:100%;
-          height:auto;
-      }
-  }
-  
+   
   .success-story h4 {
     margin-bottom: 15px;
     color: #2a2a2a;
@@ -354,8 +372,10 @@ blockquote p{
     color:#fff;
     text-decoration: none;
 }
+
+
 /* Media */
-@media (max-width: 768px) {
+@media (min-width:200px) and (max-width:768px) {
 *{
         font-size: 12px ;
     }
@@ -364,6 +384,14 @@ blockquote p{
         font-weight: 400;
         color: #1C1C21;
     } 
+    .drops{
+        background-color: white;
+        
+    }
+    .dropdown-item:hover{
+        color:#313040;
+        background-color: #c3bfba;
+    }
      .container1 {
         margin:auto;
         flex-direction:column-reverse;
@@ -423,6 +451,7 @@ li img{
 .section3 .con{
     flex-direction: column;
     padding:25px;
+    flex-wrap: wrap;
     /* margin:20px;*/
 }
 .list{
@@ -450,9 +479,15 @@ li img{
 
 }
 #success-stories .container {
+    flex-direction: column;
     gap:40px;
     padding: 20px;
-     margin: 0px;
+     /* margin: 0px; */
+      }
+
+      .success-story{
+          width:80%;
+          margin: auto;
       }
   #success-stories h2 {
     padding:20px;
@@ -492,4 +527,53 @@ blockquote p{
 .info p{
     display: none;
 } 
+}
+@media(min-width:768px) and (max-width:1100px){
+    .container1 {
+        margin:auto;
+        flex-direction:column-reverse;
+        align-items: center;
+        align-content: none;
+       
+     }
+     .container1 .title{
+      width:80%;
+      
+     }
+     .me {
+         margin-right: 7px;
+         margin-bottom:20px;
+     }
+    .success-story{
+        width:100%;
+        height:auto;
+    }
+    .section3 .con{
+        flex-direction: column;
+        padding:25px;
+        flex-wrap: wrap;
+    }
+
+    .section4 .whole{
+        flex-direction: column;
+        margin: 20px 20px 0 20px;
+    }
+    .section4 .whole ul{
+       width: 80%;
+       margin: auto;
+  }
+  
+    .card::after {
+        content: '';
+        position: absolute;
+        bottom: -34px;
+        left: 18%;
+        transform: translateX(-100%);
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 55px 50px 0 50px;
+        border-color: white transparent transparent transparent; 
+} 
+
 }
