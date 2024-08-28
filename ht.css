@@ -1,3 +1,132 @@
+:root{
+  --color:#222222;
+  --background-color: #ffffff;
+}
+* {
+  padding: 0;
+  margin: 0;
+  font-size:20px;
+  font-family:  "Montserrat", sans-serif;
+  font-weight: 400;
+}
+body {
+ font-size: 20px;
+font-weight: 400;
+font-family:  "Montserrat", sans-serif;
+line-height: 1.6;
+background-color: #ffffff;
+color: #1C1C21;;
+}
+ol, ul {
+list-style: none;
+  padding:0;
+}
+blockquote, q {
+quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+content: '';
+content: none;
+}
+table {
+border-collapse: collapse;
+}
+h1{
+   font-size:  3.815rem;
+   font-family: "Chakra Petch", sans-serif ;
+}
+h2{
+    font-size: 3.052rem;
+      font-family:"Chakra Petch", sans-serif;
+  } 
+h3{	
+  font-size: 2.441rem;
+  font-family:"Chakra Petch", sans-serif;
+}
+h4{
+    font-size: 1.953rem;
+      font-family: "Chakra Petch", sans-serif;
+  } 
+h5{
+  font-size: 1.563rem;
+  font-family:"Chakra Petch", sans-serif;	
+}
+h6{    
+      font-size: 1.25rem;
+      font-weight: 500;
+      font-family: "Chakra Petch", sans-serif;
+  } 
+p{
+    font-size: 18px;
+      font-weight: 400;
+      line-height: 1.6;
+      color: #1C1C21;
+  } 
+small{
+    font-size: 0.8rem;
+  }
+  
+  /*Css of own  */
+
+.name{
+  margin:70px 50px 0 150px ; 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; 
+}
+.Menu{
+  z-index:5;
+  position: fixed;
+  right: 50px;
+  border-radius: 10%;
+  background-color: white;
+  padding: 10px;
+  border:none;
+}
+.drops{
+  
+  transform: translate3d(-128.4px, -56.6px, 0px) !important;
+  min-width: 50px !important;
+  width: 140px;
+  min-height:100vh ;
+  background-color: transparent;
+}
+.dropdown-item{
+  margin: 30px;
+  transform: rotate(90deg);
+  font-weight: 500;
+  color: #dc3630;
+  font-size:16px;
+  /* padding:5px;
+  margin-bottom: 20px; */
+  display: inline-block;
+}
+.dropdown-item:hover{
+  color:#313040;
+  background-color: #c3bfba;
+}
+.container1{
+  display:flex;
+  margin: 110px 30px 70px 30px;
+  justify-content: space-evenly;
+}
+.container1 .title{
+  max-width: 100%;
+  width: 55%;
+  margin:0 0 60px 0;
+}
+.topic{
+  padding-bottom: 40px;
+}
+.me img{
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  border: none;  
+  display:block;
+  max-width: 100%;
+}
 #success-stories {
     background-color: #f3f3f3;
     padding: 60px 20px;

@@ -85,22 +85,61 @@ small{
     border:none;
 }
 .drops{
+    z-index:6 !important;
+    position:fixed !important;
+    top:0px !important;
     min-width: 50px !important;
-    width: 140px;
-    min-height:100vh ;
+    width: 5%;
+    min-height:100vh;
     background-color: transparent;
+    transform: none !important;
+}
+.drops li {
+    min-height:50px;
+    transform: rotate(90deg);
+    height: 30px;
+    text-align: center;
+    display: block;
+    position: relative !important ;
 }
 .dropdown-item{
-    transform: rotate(90deg);
+    position: relative !important;
+    margin:  50px 0px 0px 0px;
+    /* transform: rotate(90deg); */
+    padding:20px 30px ;
+
     font-weight: 500;
     color: #dc3630;
     font-size:16px;
-    padding:5px;
+    /* padding:5px;
+    margin-bottom: 20px; */
+     display: block;
 }
 .dropdown-item:hover{
-    color:#313040;
-    background-color: #c3bfba;
+    color:color !important;
+    background-color: #c3bfba!important; 
+
 }
+.home{
+    min-width: 131px;
+    height: 18%;
+}
+.home:hover{
+    background-color: #dc3630;
+}
+
+.btn-close-small {
+    font-size: 12px; /* Adjust the font size */
+    width: 20px; /* Adjust the button width */
+    height: 20px; /* Adjust the button height */
+    padding: 0; /* Remove default padding */
+    line-height: 1; /* Adjust line height */
+}
+
+/* .btn-close-small::before {
+    font-size: 16px; /* Adjust the size of the close icon /*
+} */
+
 .container1{
     display:flex;
     margin: 110px 30px 70px 30px;
@@ -380,15 +419,24 @@ blockquote p{
         font-size: 12px ;
     }
     p{
-    	font-size: 14px;
+    	font-size: 12px;
         font-weight: 400;
         color: #1C1C21;
     } 
     .drops{
         background-color: white;
-        
     }
-    .dropdown-item:hover{
+    .drops li{
+        margin: 0;
+        height:60px;
+       padding: 0;
+    }
+    .dropdown-item{
+        margin: 0;
+        padding: 0;
+        font-size: 10px !important;
+    }
+    .drops li:hover{
         color:#313040;
         background-color: #c3bfba;
     }
@@ -409,8 +457,8 @@ blockquote p{
      }
     .name {
         text-align:center;
-        margin:auto;
-        padding:20px 55px 20px 20px;
+        margin:50px 0 0 50px;
+        padding:20px 55px 20px 10px;
         width:100%;
     }
     .topic h1{
@@ -544,6 +592,12 @@ blockquote p{
          margin-right: 7px;
          margin-bottom:20px;
      }
+     .name {
+        text-align:center;
+        margin:70px 0 0 85px;
+        padding:20px 55px 20px 10px;
+        width:100%;
+    }
     .success-story{
         width:100%;
         height:auto;
@@ -575,5 +629,24 @@ blockquote p{
         border-width: 55px 50px 0 50px;
         border-color: white transparent transparent transparent; 
 } 
+.drops{
+    background-color: white;
+}
+.drops li{
+    margin: 0;
+    height:60px;
+   padding: 0;
+}
+.dropdown-item{
+    margin: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+    font-size: 10px !important;
+}
+.drops li:hover{
+    color:#313040;
+    background-color: #c3bfba;
+}
 
 }
