@@ -81,51 +81,47 @@ small{
     right: 50px;
     border-radius: 10%;
     background-color: white;
-    padding: 10px;
+    padding: 0px;
     border:none;
 }
 .drops{
+    margin: 0px;
     z-index:6 !important;
     position:fixed !important;
     top:0px !important;
     min-width: 50px !important;
-    width: 5%;
+    width: 6%;
     min-height:100vh;
+    height: 100vh;
     background-color: transparent;
     transform: none !important;
 }
-.drops li {
-    min-height:50px;
-    transform: rotate(90deg);
-    height: 30px;
-    text-align: center;
-    display: block;
+.drops span {
+    width: 65px;
+    height:112px;
+    text-transform:uppercase;
+    writing-mode: vertical-lr;
     position: relative !important ;
 }
-.dropdown-item{
-    position: relative !important;
-    margin:  50px 0px 0px 0px;
-    /* transform: rotate(90deg); */
-    padding:20px 30px ;
+.bars{
+    min-width:180px;
+    display:flex;
+    flex-direction:column ;
+    height: 100%;
+} 
 
+.dropdown-item{
+    border: 2px solid black;
+    padding: 30px 18px;
     font-weight: 500;
     color: #dc3630;
-    font-size:16px;
-    /* padding:5px;
-    margin-bottom: 20px; */
-     display: block;
+    font-size: 16px;
+    
 }
 .dropdown-item:hover{
     color:color !important;
     background-color: #c3bfba!important; 
 
-}
-.home{
-    min-width: 131px;
-    height: 18%;
-}
-.home:hover{
-    background-color: #dc3630;
 }
 
 .btn-close-small {
@@ -648,5 +644,11 @@ blockquote p{
     color:#313040;
     background-color: #c3bfba;
 }
+
+
+
+
+.rotation{
+transform: rotate(90deg);
 
 }
