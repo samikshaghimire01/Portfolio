@@ -15,7 +15,10 @@ body {
   font-family:  "Montserrat", sans-serif;
   line-height: 1.6;
   background-color: #ffffff;
-  color: #1C1C21;;
+  color: #1C1C21;
+  overflow-x: hidden !important;
+  max-width: 100%;
+
 }
 ol, ul {
 	list-style: none;
@@ -70,18 +73,25 @@ small{
     /*Css of own  */
 
 .name{
-    margin:70px 50px 0 150px ; 
+    padding: 70px 0 0 100px;
+    max-width: 100%;
+    margin: auto; 
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between; 
+    gap:50px; 
+}
+.nav{
+    display: flex;
+
 }
 .Menu{
+    overflow-x: hidden;
     z-index:5;
     position: fixed;
-    right: 50px;
+    /* right: 50px; */
     border-radius: 10%;
     background-color: white;
-    padding: 0px;
+    padding: 10px;
     border:none;
 }
 .drops{
@@ -92,31 +102,38 @@ small{
     min-width: 50px !important;
     width: 6%;
     min-height:100vh;
-    height: 100vh;
+    /* height: 100vh; */ 
     background-color: transparent;
     transform: none !important;
 }
 .drops span {
     width: 65px;
-    height:112px;
+    /* height:112px; */
     text-transform:uppercase;
     writing-mode: vertical-lr;
     position: relative !important ;
 }
+
 .bars{
     min-width:180px;
     display:flex;
     flex-direction:column ;
-    height: 100%;
+    /* height: 100%; */
 } 
 
 .dropdown-item{
     border: 2px solid black;
-    padding: 30px 18px;
+    padding: 10px 10px; 
     font-weight: 500;
     color: #dc3630;
-    font-size: 16px;
+    font-size: 14px;
     
+}
+.ove{
+    padding-top:8px;
+}
+.lov{
+    padding-top:16px;
 }
 .dropdown-item:hover{
     color:color !important;
@@ -419,23 +436,62 @@ blockquote p{
         font-weight: 400;
         color: #1C1C21;
     } 
-    .drops{
+    
+    .Menu{
+        z-index:5;
+        position: fixed;
+        /* right: 50px; */
+        border-radius: 10%;
         background-color: white;
+        padding: 7px;
+        border:none;
     }
-    .drops li{
-        margin: 0;
-        height:60px;
-       padding: 0;
+    .drops{
+        
+        width: 9%;
+        background-color: white;
+        
     }
+    .drops span {
+        width: 45px;
+        height:100px;
+    }
+    .bars{
+        min-width:180px;
+        display:flex;
+        flex-direction:column ;
+        height: 100%;
+    } 
+    
     .dropdown-item{
-        margin: 0;
-        padding: 0;
-        font-size: 10px !important;
+       
+        padding: 22px 18px;
+        font-weight: 500;
+        color: #dc3630;
+        font-size: 10px;
+        
     }
-    .drops li:hover{
-        color:#313040;
-        background-color: #c3bfba;
+    .ove{
+        padding-top:5px;
     }
+    .lov{
+        padding-top:12px;
+    }
+    .dropdown-item:hover{
+        color:color !important;
+        background-color: #c3bfba!important; 
+    
+    }
+    
+    .btn-close-small {
+        font-size: 12px; /* Adjust the font size */
+        width: 20px; /* Adjust the button width */
+        height: 20px; /* Adjust the button height */
+        padding: 0; /* Remove default padding */
+        line-height: 1; /* Adjust line height */
+    }
+    
+    
      .container1 {
         margin:auto;
         flex-direction:column-reverse;
@@ -453,16 +509,16 @@ blockquote p{
      }
     .name {
         text-align:center;
-        margin:50px 0 0 50px;
+        /* margin:50px 0 0 50px; */
         padding:20px 55px 20px 10px;
         width:100%;
     }
-    .topic h1{
+ .topic h1{
     padding:none;  
     width:100%; 
 }
 .section2{
-    padding: 50px 0 20px 0;
+    padding: 50px 30px 20px 30px;
 }
 
 #sideli{
@@ -494,7 +550,7 @@ li img{
 }
 .section3 .con{
     flex-direction: column;
-    padding:25px;
+    padding:25px 70px;
     flex-wrap: wrap;
     /* margin:20px;*/
 }
@@ -510,7 +566,7 @@ li img{
 }
 .box1{
     padding:10px;
-    gap:20px;
+    gap:6px;
 
 }
    .box1 img{
@@ -521,6 +577,9 @@ li img{
 #success-stories{
     padding: 30px 0 0 0;
 
+}
+#success-stories h2{
+    padding: 20px 63px;
 }
 #success-stories .container {
     flex-direction: column;
@@ -533,13 +592,10 @@ li img{
           width:80%;
           margin: auto;
       }
-  #success-stories h2 {
-    padding:20px;
-   
-  }
+  
   .section4 .whole{
       flex-direction: column;
-      margin: 20px 20px 0 20px;
+      margin: 0 65px;
   }
   .section4 .whole ul{
      width: 100%;
@@ -566,12 +622,14 @@ blockquote p{
     font-size:14px !important;
 }
 .testimonials h2{
-    padding: 55px 0 15px 20px;
+    padding: 58px 0 15px 70px;
 } 
 .info p{
     display: none;
 } 
 }
+
+/* css for max width */
 @media(min-width:768px) and (max-width:1100px){
     .container1 {
         margin:auto;
@@ -590,9 +648,30 @@ blockquote p{
      }
      .name {
         text-align:center;
-        margin:70px 0 0 85px;
-        padding:20px 55px 20px 10px;
+        padding:42px 55px 20px 35px;
         width:100%;
+    }
+    .dropdown-item{
+       
+        padding: 22px 18px;
+        font-size: 14px;
+        
+    }
+    .drops{
+        
+        width: 9%;
+        background-color: white;
+        
+    }
+    .drops span {
+        width: 65px;
+        height:16%;
+    }
+    .ove{
+        padding-top:5px;
+    }
+    .lov{
+        padding-top:10px;
     }
     .success-story{
         width:100%;
@@ -625,30 +704,11 @@ blockquote p{
         border-width: 55px 50px 0 50px;
         border-color: white transparent transparent transparent; 
 } 
-.drops{
-    background-color: white;
-}
-.drops li{
-    margin: 0;
-    height:60px;
-   padding: 0;
-}
-.dropdown-item{
-    margin: 0;
-    padding-left: 10px;
-    padding-right: 10px;
+
+.section3 .con{
     
-    font-size: 10px !important;
-}
-.drops li:hover{
-    color:#313040;
-    background-color: #c3bfba;
-}
-
-
-
-
-.rotation{
-transform: rotate(90deg);
+    padding:60px 100px;
 
 }
+}
+
