@@ -78,7 +78,18 @@ small{
     margin: auto; 
     display: flex;
     flex-wrap: wrap;
-    gap:50px; 
+    justify-content: space-between;
+}
+.cv{
+    margin-right: 30px;
+    border: 2px solid black;
+    border-radius: 40px;
+    padding: 10px;
+   font-size:14px;
+   text-decoration:none !important;
+   color:#111115 !important;
+   
+
 }
 .nav{
     display: flex;
@@ -88,11 +99,13 @@ small{
     overflow-x: hidden;
     z-index:5;
     position: fixed;
-    /* right: 50px; */
+    left: 50px;
     border-radius: 10%;
     background-color: white;
     padding: 10px;
     border:none;
+    opacity: 80%;
+
 }
 .drops{
     margin: 0px;
@@ -100,7 +113,7 @@ small{
     position:fixed !important;
     top:0px !important;
     min-width: 50px !important;
-    width: 6%;
+    width: 5%;
     min-height:100vh;
     /* height: 100vh; */ 
     background-color: transparent;
@@ -113,33 +126,26 @@ small{
     writing-mode: vertical-lr;
     position: relative !important ;
 }
-
-
 .bars{
     min-width:180px;
     display:flex;
     flex-direction:column ;
+    margin-bottom: 30px;
     /* height: 100%; */
 } 
 
 .dropdown-item{
-    border: 2px solid black;
-    padding: 10px 10px; 
+    /* border: 2px solid black; */
+    padding: 10px 21px; 
     font-weight: 500;
-    color: #dc3630;
+    color: orangered;
     font-size: 14px;
     
 }
-.ove{
-    padding-top:8px;
-}
-.lov{
-    padding-top:16px;
-}
-.dropdown-item:hover{
-    color:color !important;
-    background-color: #c3bfba!important; 
 
+.dropdown-item:hover{
+    color:black !important;
+    background-color: transparent!important;
 }
 
 .btn-close-small {
@@ -149,11 +155,28 @@ small{
     padding: 0; /* Remove default padding */
     line-height: 1; /* Adjust line height */
 }
+.name h5{
+    margin-left:65px ;
+    margin-bottom:0px;
+}
 
-/* .btn-close-small::before {
-    font-size: 16px; /* Adjust the size of the close icon /*
-} */
-
+.icon{
+    display:flex;
+    flex-direction: column;
+    gap: 10px;
+    
+ }
+ .icon a{
+    text-align: center;
+    width: 60px !important;
+    height: 40px !important;
+    color: orangered!important;
+     padding:5px; 
+ }
+ .icon a:hover{
+    color:black !important;
+   background-color: none !important;
+}
 .container1{
     display:flex;
     margin: 110px 30px 70px 30px;
@@ -344,8 +367,8 @@ blockquote p{
     content: '';
     position: absolute;
     bottom: -30px;
-    left: 20%;
-    transform: translateX(-100%);
+     left: 20%; 
+    transform: translateX(-182%);
     width: 0;
     height: 0;
     border-style: solid;
@@ -439,23 +462,18 @@ blockquote p{
     } 
     
     .Menu{
-        z-index:5;
-        position: fixed;
-        /* right: 50px; */
-        border-radius: 10%;
-        background-color: white;
-        padding: 7px;
-        border:none;
-    }
+            left:20px; 
+            top: 20px;
+    } 
     .drops{
-        
+         opacity:80%; 
         width: 9%;
         background-color: white;
         
     }
     .drops span {
         width: 45px;
-        height:100px;
+        /* height:100px; */
     }
     .bars{
         min-width:180px;
@@ -468,21 +486,19 @@ blockquote p{
        
         padding: 22px 18px;
         font-weight: 500;
-        color: #dc3630;
-        font-size: 10px;
+        font-size: 13px;
         
     }
-    .ove{
-        padding-top:5px;
+    .cv{
+        margin-right: 10px;
+        padding: 10px;
+        font-size:10px;  
+        border: none;
     }
-    .lov{
-        padding-top:12px;
-    }
-    .dropdown-item:hover{
-        color:color !important;
-        background-color: #c3bfba!important; 
-    
-    }
+     .name h5{
+         margin-bottom:0px;
+        margin-left: 55px ;
+    } 
     
     .btn-close-small {
         font-size: 12px; /* Adjust the font size */
@@ -497,7 +513,7 @@ blockquote p{
         margin:auto;
         flex-direction:column-reverse;
         align-items: center;
-        align-content: none;
+        
        
      }
      .container1 .title{
@@ -513,9 +529,10 @@ blockquote p{
         /* margin:50px 0 0 50px; */
         padding:20px 55px 20px 10px;
         width:100%;
+        align-items: center;
     }
  .topic h1{
-    padding:none;  
+    padding:0px;  
     width:100%; 
 }
 .section2{
@@ -632,11 +649,13 @@ blockquote p{
 
 /* css for max width */
 @media(min-width:768px) and (max-width:1100px){
+   .Menu{
+       left:50px;
+   }
     .container1 {
         margin:auto;
         flex-direction:column-reverse;
         align-items: center;
-        align-content: none;
        
      }
      .container1 .title{
@@ -664,16 +683,10 @@ blockquote p{
         background-color: white;
         
     }
-    .drops span {
-        width: 65px;
-        height:16%;
+    .bars{
+        margin:0;
     }
-    .ove{
-        padding-top:5px;
-    }
-    .lov{
-        padding-top:10px;
-    }
+    
     .success-story{
         width:100%;
         height:auto;
@@ -713,3 +726,19 @@ blockquote p{
 }
 }
 
+@media(min-width:1100px) and (max-width:1500px){
+    .icon{
+        gap:30px;
+    }
+    .card::after{
+    transform: translateX(-164%)
+}
+.bars{
+    margin-bottom: 30px;
+}
+}
+@media(max-height:1000px){
+   .card::after{
+    left: 45%;
+   }
+}
