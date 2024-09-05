@@ -71,25 +71,40 @@ small{
     }
     
     /*Css of own  */
+.nav{
+    width:100%;
+    position: fixed;
+    top: 0;
+    padding: 10px;
+    background-color: #fff;
+    z-index: 999;
 
+}
 .name{
-    padding: 70px 0 0 100px;
-    max-width: 100%;
-    margin: auto; 
+    top: 0;
+    width: 90% !important;
     display: flex;
-    flex-wrap: wrap;
+    position: relative !important;
     justify-content: space-between;
+    margin-left: auto;  
+    align-items: center;
+    flex-wrap: wrap;
 }
 .cv{
     margin-right: 30px;
     border: 2px solid black;
     border-radius: 40px;
     padding: 10px;
-   font-size:14px;
-   text-decoration:none !important;
-   color:#111115 !important;
+    font-size:14px;
+    font-weight: 700;
+    text-decoration:none !important;
+    color:#111115 !important;
    
 
+}
+.cv:hover{
+    color:rgb(189, 145, 145)!important;
+    background-color: #f0e8e8;
 }
 .nav{
     display: flex;
@@ -97,9 +112,6 @@ small{
 }
 .Menu{
     overflow-x: hidden;
-    z-index:5;
-    position: fixed;
-    left: 50px;
     border-radius: 10%;
     background-color: white;
     padding: 10px;
@@ -114,14 +126,12 @@ small{
     top:0px !important;
     min-width: 50px !important;
     width: 5%;
-    min-height:100vh;
-    /* height: 100vh; */ 
     background-color: transparent;
+    min-height:100vh;
     transform: none !important;
 }
 .drops span {
     width: 65px;
-    /* height:112px; */
     text-transform:uppercase;
     writing-mode: vertical-lr;
     position: relative !important ;
@@ -131,23 +141,22 @@ small{
     display:flex;
     flex-direction:column ;
     margin-bottom: 30px;
-    /* height: 100%; */
+    
 } 
-
 .dropdown-item{
-    /* border: 2px solid black; */
-    padding: 10px 21px; 
-    font-weight: 500;
-    color: orangered;
+    padding: 28px 21px 0px 21px; 
+    font-weight: 600;
+    color: black;
+    text-shadow: 1px 1px 3px white; 
     font-size: 14px;
     
 }
-
 .dropdown-item:hover{
-    color:black !important;
+    transition: 0.3s, ease;
+    color:rgb(189, 145, 145) !important;
+    text-shadow: none;
     background-color: transparent!important;
 }
-
 .btn-close-small {
     font-size: 12px; /* Adjust the font size */
     width: 20px; /* Adjust the button width */
@@ -155,11 +164,20 @@ small{
     padding: 0; /* Remove default padding */
     line-height: 1; /* Adjust line height */
 }
-.name h5{
-    margin-left:65px ;
-    margin-bottom:0px;
-}
 
+
+.name h5{
+     margin-left:10px ;
+    margin-bottom:0px; 
+}
+.cross{
+    color: rgb(7, 7, 7);
+    border: none;
+    background-color:rgb(255, 250, 250);
+}
+.cross:hover{
+    color:rgb(189, 145, 145);
+}
 .icon{
     display:flex;
     flex-direction: column;
@@ -170,17 +188,22 @@ small{
     text-align: center;
     width: 60px !important;
     height: 40px !important;
-    color: orangered!important;
-     padding:5px; 
+    color: rgb(7, 7, 7)!important;
+    text-shadow: 0px 0px 6px white; 
+    padding:5px; 
  }
  .icon a:hover{
-    color:black !important;
+   color:rgb(189, 145, 145) !important;
    background-color: none !important;
+   text-shadow: none!important;
 }
 .container1{
     display:flex;
-    margin: 110px 30px 70px 30px;
+    
     justify-content: space-evenly;
+}
+.section1{
+    margin: 160px 40px 70px 30px;
 }
 .container1 .title{
     max-width: 100%;
@@ -314,15 +337,16 @@ li img{
 .section4{
     display:block;
     background-color:#EDEEF1;
+    padding: 90px 70px 70px 70px;
 }
  .testimonials h2{
-    padding: 80px 0 0 145px;
+   margin-left: 60px;
 } 
 
 .section4 .whole{
     display: flex;
-    margin-left: 4rem;
-    margin-right: 4rem;
+    /* margin-left: 4rem;
+       margin-right: 4rem; */
     margin-top:60px;
 }
 .section4 .whole ul{
@@ -330,9 +354,14 @@ li img{
     display: block;
     width: 40%;
 }
-
+.navbar_width{
+    width: 90%;
+    justify-content: space-between;
+    margin-left: auto;
+    display: flex;
+}
 .box1{
-padding: 50px;
+padding: 60px;
 background-color: #111115;
 display: flex;
 justify-content: center;
@@ -381,7 +410,7 @@ blockquote p{
  }
  #success-stories {
     background-color:#dedede;
-    padding: 60px 20px 100px 20px;
+    padding: 90px 20px 100px 20px;
     border-bottom:rgb(21, 20, 20);
   }
   
@@ -391,11 +420,11 @@ blockquote p{
     justify-content: center;
     display: flex; 
     /* margin: 0 4rem; */
-    padding: 0 20px;
+    padding: 60px 20px;
   }
   
   #success-stories h2 {
-    padding: 10px 0 50px 180px;
+    padding: 0px 0 0px 180px;
     color: #333;
   }
   
@@ -460,13 +489,22 @@ blockquote p{
         font-weight: 400;
         color: #1C1C21;
     } 
+    .nav{
+        padding:0px;
+    }
+    .name{
+        padding:0px;
+       flex-wrap:nowrap;
+    }
+    .name h5{
+        padding:18px 0px 0px 0px;
+    }
     
     .Menu{
-            left:20px; 
-            top: 20px;
+           padding:24px;
     } 
     .drops{
-         opacity:80%; 
+        opacity:80%; 
         width: 9%;
         background-color: white;
         
@@ -489,18 +527,18 @@ blockquote p{
         font-size: 13px;
         
     }
-    .cv{
+.cv{
         margin-right: 10px;
-        padding: 10px;
+        padding: 15px;
         font-size:10px;  
         border: none;
     }
-     .name h5{
+     /* .name h5{
          margin-bottom:0px;
         margin-left: 55px ;
-    } 
+    }  */
     
-    .btn-close-small {
+.btn-close-small {
         font-size: 12px; /* Adjust the font size */
         width: 20px; /* Adjust the button width */
         height: 20px; /* Adjust the button height */
@@ -509,29 +547,29 @@ blockquote p{
     }
     
     
-     .container1 {
+.container1 {
         margin:auto;
         flex-direction:column-reverse;
         align-items: center;
         
-       
+      
      }
-     .container1 .title{
+.container1 .title{
       width:80%;
       
      }
-     .me {
+.me {
          margin-right: 7px;
          margin-bottom:20px;
      }
-    .name {
+    /* .name {
         text-align:center;
         /* margin:50px 0 0 50px; */
-        padding:20px 55px 20px 10px;
+        /* padding:20px 55px 20px 10px;
         width:100%;
         align-items: center;
-    }
- .topic h1{
+    } */ 
+.topic h1{
     padding:0px;  
     width:100%; 
 }
@@ -545,7 +583,7 @@ blockquote p{
 .pic{
     padding:0px;   
 }
- .pic h2{
+.pic h2{
 
     margin-bottom: 45px; 
  }
@@ -587,7 +625,7 @@ li img{
     gap:6px;
 
 }
-   .box1 img{
+.box1 img{
        height:50px;
        width: 50px;
    }
@@ -602,20 +640,22 @@ li img{
 #success-stories .container {
     flex-direction: column;
     gap:40px;
-    padding: 20px;
+    padding: 10px 0px 50px 0px;
      /* margin: 0px; */
       }
 
-      .success-story{
+.success-story{
           width:80%;
           margin: auto;
       }
-  
-  .section4 .whole{
+.section4{
+      padding:40px 0px;
+  }
+.section4 .whole{
       flex-direction: column;
       margin: 0 65px;
   }
-  .section4 .whole ul{
+.section4 .whole ul{
      width: 100%;
 }
 .section4 .whole ul li{
@@ -624,7 +664,7 @@ li img{
 }
 
 .card::after {
-    content: '';
+    content:'';
     position: absolute;
     bottom: -34px;
     left: 32%;
@@ -640,7 +680,7 @@ blockquote p{
     font-size:14px !important;
 }
 .testimonials h2{
-    padding: 58px 0 15px 70px;
+    padding: 0 0 20px 0px;
 } 
 .info p{
     display: none;
@@ -668,7 +708,7 @@ blockquote p{
      }
      .name {
         text-align:center;
-        padding:42px 55px 20px 35px;
+        /* padding:42px 55px 20px 35px; */
         width:100%;
     }
     .dropdown-item{
@@ -728,7 +768,7 @@ blockquote p{
 
 @media(min-width:1100px) and (max-width:1500px){
     .icon{
-        gap:30px;
+        gap:0px;
     }
     .card::after{
     transform: translateX(-164%)
@@ -739,6 +779,6 @@ blockquote p{
 }
 @media(max-height:1000px){
    .card::after{
-    left: 45%;
+    left: 75%;
    }
 }
